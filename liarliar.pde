@@ -97,8 +97,8 @@ void draw() {
     image(img, 100, 100);
     //println(second() + " " + holdsecond+5);
   }
-  else if (!initialized) { // Next ask the user for the filenamegetName
-    getName();
+  else if (!initialized) { // Next ask the user for the filenameenterName
+    enterName();
   } 
   else if(close){ // Check to see if the program is to close - if so, display the logo for 5s and exit
     holdsecond=second();
@@ -145,7 +145,7 @@ void draw() {
 
 }
 
-void getName() { // The initial screen where the user enters their name, which is then used to save their responses and times
+void enterName() { // The initial screen where the user enters their name, which is then used to save their responses and times
   background(0);
   image(soloLogo, displayWidth/2 - 100, displayHeight-200);
   int indent = 200;
